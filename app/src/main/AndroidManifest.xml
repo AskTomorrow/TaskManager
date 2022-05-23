@@ -9,10 +9,27 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <meta-data
+            android:name="auth.hse.ru.client_id"
+            android:value="6572b17b-1c01-4e59-a199-7a6aa4a59761" />
+
+        <meta-data
+            android:name="auth.hse.ru.redirect_uri"
+            android:value="net.asktomorrow.taskmanager://auth.hse.ru/adfs/oauth2/callback" />
         <activity android:name="net.asktomorrow.taskmanager.SplashActivity">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
                 <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="auth.hse.ru"
+                    android:scheme="net.asktomorrow.taskmanager" />
             </intent-filter>
         </activity>
         <activity android:name="net.asktomorrow.taskmanager.MainActivity" />
