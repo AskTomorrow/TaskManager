@@ -9,6 +9,12 @@ import android.os.Handler;
 public class SplashActivity extends AppCompatActivity {
 
     @Override
+    void onNewIntent(Intent intent) {
+        AuthHelper.onNewIntent(intent, this, 1);
+        super.onNewIntent(intent);
+    }
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
