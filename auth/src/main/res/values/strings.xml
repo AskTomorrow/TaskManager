@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">auth</string>
+
+    <string name="ru_hseid_acc_type" translatable="false">ru.hseapp.acc</string>
+
+    <string name="acc_manager_continue_with_placeholder">Continue as %s</string>
+    <string name="acc_manager_new_login">Login into another account</string>
+    <string name="error_happened">An error occurred.\nTry again later</string>
+</resources>
